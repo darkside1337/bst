@@ -199,7 +199,7 @@ export default class Tree {
   }
   /// get smallest node from node
   getSmallestNode(node) {
-    while (!node.left === null) {
+    while (node.left !== null) {
       node = node.left;
     }
     return node;
